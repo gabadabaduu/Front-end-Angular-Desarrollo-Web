@@ -1,6 +1,6 @@
 <div class="container">
     <div [hidden]="submitted">
-      <h1>Iniciar Sesion</h1>
+      <h1>Canchas</h1>
       <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
         <div class="form-group">
           <label for="name">Name</label>
@@ -15,18 +15,18 @@
         </div>
         <br>
         <div class="form-group">
-          <label for="password">Password</label>
-          <input type="text" class="form-control" id="alterEgo"
-                 [(ngModel)]="model.password" name="alterEgo">
+          <label for="horarios">Horarios</label>
+          <input type="text" class="form-control" id="horarios"
+                 [(ngModel)]="model.horarios" name="horarios">
         </div>
         <br>
         <div class="form-group">
-          <label for="cancha">Cancha</label>
-          <select class="form-control" id="power"
+          <label for="cancha">equipo</label>
+          <select class="form-control" id="equipo"
                   required
-                  [(ngModel)]="model.cancha" name="power"
+                  [(ngModel)]="model.equipo" name="equipo"
                   #power="ngModel">
-            <option *ngFor="let pow of cancha" [value]="pow">{{pow}}</option>
+            <option *ngFor="let pow of canchas" [value]="pow">{{pow}}</option>
           </select>
           <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
             Power is required

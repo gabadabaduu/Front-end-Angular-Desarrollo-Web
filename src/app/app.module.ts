@@ -12,6 +12,7 @@ import { HorariosComponent } from './pages/canchas/horarios/horarios.component';
 import { ReservasComponent } from './pages/canchas/reservas/reservas.component';
 import { CancelarComponent } from './pages/canchas/reservas/cancelar/cancelar.component';
 import { UsuarioFormComponent } from './pages/iniciar-sesion/Usuario-form/usuario-form.component';
+import { canchasFormComponent } from './pages/canchas/canchas-forms/canchas-forms.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -28,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     HorariosComponent,
     ReservasComponent,
     CancelarComponent,
-    UsuarioFormComponent
+    UsuarioFormComponent,
+    canchasFormComponent
+    
   ],
   imports: [
     BrowserModule,
