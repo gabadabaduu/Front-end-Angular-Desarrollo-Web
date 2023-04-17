@@ -1,6 +1,5 @@
 <div class="container">
     <div [hidden]="submitted">
-      <h1>Canchas</h1>
       <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
         <div class="form-group">
           <label for="name">Name</label>
@@ -21,7 +20,20 @@
         </div>
         <br>
         <div class="form-group">
-          <label for="cancha">equipo</label>
+          <label for="equipo">equipo 1</label>
+          <select class="form-control" id="equipo"
+                  required
+                  [(ngModel)]="model.equipo" name="equipo"
+                  #power="ngModel">
+            <option *ngFor="let pow of canchas" [value]="pow">{{pow}}</option>
+          </select>
+          <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+            Power is required
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="equipo">equipo 2</label>
           <select class="form-control" id="equipo"
                   required
                   [(ngModel)]="model.equipo" name="equipo"

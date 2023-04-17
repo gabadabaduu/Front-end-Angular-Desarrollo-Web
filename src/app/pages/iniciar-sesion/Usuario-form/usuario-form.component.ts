@@ -8,7 +8,7 @@ import { Usuario } from 'src/app/usuario';
     styleUrls: ['./usuario-form.component.css']
 })
 export class UsuarioFormComponent {
-    cancha = ['Campin', 'messi', 'bicho', 'Ciudad Vinotinto'];
+    cancha = ['Real madrid', 'messi', 'bicho', 'Barcelona'];
 
 model = new Usuario(18, 'Mario Luigi', 'dhgfowh', 'Ciudad Vinotinto');
 

@@ -8,7 +8,8 @@ import { canchas } from 'src/app/canchas';
     styleUrls: ['./canchas-forms.component.css']
 })
 export class canchasFormComponent {
-    canchas = ['Real Madrid', 'Barcelona', 'La Vinotinto', 'Millos'];
+    equipo = ['Real Madrid', 'Barcelona', 'La Vinotinto', 'Millos'];
+    canchas = ['Campin', 'Santiago Bernabeu', ' Ciudad Vinotinto', 'Buenos Aires'];
 
 model = new canchas(18, 'Ciudad Vinotinto', '8:00 AM', 'Millos');
 

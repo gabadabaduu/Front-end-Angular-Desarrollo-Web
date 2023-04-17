@@ -14,6 +14,7 @@ import { CancelarComponent } from './pages/canchas/reservas/cancelar/cancelar.co
 import { UsuarioFormComponent } from './pages/iniciar-sesion/Usuario-form/usuario-form.component';
 import { canchasFormComponent } from './pages/canchas/canchas-forms/canchas-forms.component';
 import { FormsModule } from '@angular/forms';
+import { CrearcuentaComponent } from './crearcuenta/crearcuenta.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     ReservasComponent,
     CancelarComponent,
     UsuarioFormComponent,
-    canchasFormComponent
+    canchasFormComponent,
+    CrearcuentaComponent
     
   ],
   imports: [

@@ -1,6 +1,5 @@
 <div class="container">
     <div [hidden]="submitted">
-      <h1>Iniciar Sesion</h1>
       <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
         <div class="form-group">
           <label for="name">Name</label>
@@ -21,7 +20,7 @@
         </div>
         <br>
         <div class="form-group">
-          <label for="cancha">Cancha</label>
+          <label for="equipo">equipo</label>
           <select class="form-control" id="power"
                   required
                   [(ngModel)]="model.cancha" name="power"
