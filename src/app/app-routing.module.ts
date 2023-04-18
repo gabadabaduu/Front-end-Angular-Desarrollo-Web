@@ -9,6 +9,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { HorariosComponent } from './pages/canchas/horarios/horarios.component';
 import { ReservasComponent } from './pages/canchas/reservas/reservas.component';
 import { CancelarComponent } from './pages/canchas/reservas/cancelar/cancelar.component';
+import { CrearcuentaComponent } from './pages/iniciar-sesion/crearcuenta/crearcuenta.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: "Canchas", component: CanchasComponent},
   {path:"Horarios", component: HorariosComponent},
   {path:"Reserva", component: ReservasComponent},
-  {path:"Cancelar", component: CancelarComponent}
+  {path:"Cancelar", component: CancelarComponent},
+  {path:"CrearCuenta", component: CrearcuentaComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
