@@ -25,7 +25,7 @@
                   required
                   [(ngModel)]="model.equipo" name="equipo"
                   #power="ngModel">
-            <option *ngFor="let pow of canchas" [value]="pow">{{pow}}</option>
+            <option *ngFor="let pow of equipo" [value]="pow">{{pow}}</option>
           </select>
           <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
             Power is required
@@ -38,7 +38,7 @@
                   required
                   [(ngModel)]="model.equipo" name="equipo"
                   #power="ngModel">
-            <option *ngFor="let pow of canchas" [value]="pow">{{pow}}</option>
+            <option *ngFor="let pow of equipo" [value]="pow">{{pow}}</option>
           </select>
           <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
             Power is required
