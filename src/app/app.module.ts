@@ -8,13 +8,16 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { ContrasenaOlvidadaComponent } from './pages/iniciar-sesion/contrasena-olvidada/contrasena-olvidada.component';
 import { CanchasComponent } from './pages/canchas/canchas.component';
-import { HorariosComponent } from './pages/canchas/horarios/horarios.component';
+import { HorariosComponent } from './pages/canchas/Tipos/horarios.component';
 import { ReservasComponent } from './pages/canchas/reservas/reservas.component';
 import { CancelarComponent } from './pages/canchas/reservas/cancelar/cancelar.component';
 import { UsuarioFormComponent } from './pages/iniciar-sesion/Usuario-form/usuario-form.component';
 import { canchasFormComponent } from './pages/canchas/canchas-forms/canchas-forms.component';
 import { FormsModule } from '@angular/forms';
 import { CrearcuentaComponent } from './pages/iniciar-sesion/crearcuenta/crearcuenta.component';
+import { BuenosAiresComponent } from './pages/canchas/Tipos/buenos-aires/buenos-aires.component';
+import { CampinComponent } from './pages/canchas/Tipos/campin/campin.component';
+import { AplicacionComponent } from './aplicacion/aplicacion.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { CrearcuentaComponent } from './pages/iniciar-sesion/crearcuenta/crearcu
     CancelarComponent,
     UsuarioFormComponent,
     canchasFormComponent,
-    CrearcuentaComponent
+    CrearcuentaComponent,
+    BuenosAiresComponent,
+    CampinComponent,
+    AplicacionComponent
     
   ],
   imports: [

@@ -6,7 +6,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { IniciarSesionComponent } from "./pages/iniciar-sesion/iniciar-sesion.component";
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { HorariosComponent } from './pages/canchas/horarios/horarios.component';
+import { HorariosComponent } from './pages/canchas/Tipos/horarios.component';
 import { ReservasComponent } from './pages/canchas/reservas/reservas.component';
 import { CancelarComponent } from './pages/canchas/reservas/cancelar/cancelar.component';
 import { CrearcuentaComponent } from './pages/iniciar-sesion/crearcuenta/crearcuenta.component';
