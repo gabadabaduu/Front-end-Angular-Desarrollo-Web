@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule , RoutingComponent} from './app-routing.module';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
@@ -18,6 +21,8 @@ import { CrearcuentaComponent } from './pages/iniciar-sesion/crearcuenta/crearcu
 import { BuenosAiresComponent } from './pages/canchas/Tipos/buenos-aires/buenos-aires.component';
 import { CampinComponent } from './pages/canchas/Tipos/campin/campin.component';
 import { AplicacionComponent } from './aplicacion/aplicacion.component';
+import { SantiagoComponent } from './pages/canchas/Tipos/santiago/santiago.component';
+import { VinotintoComponent } from './pages/canchas/Tipos/vinotinto/vinotinto.component';
 
 
 @NgModule({
@@ -38,15 +43,20 @@ import { AplicacionComponent } from './aplicacion/aplicacion.component';
     CrearcuentaComponent,
     BuenosAiresComponent,
     CampinComponent,
-    AplicacionComponent
+    AplicacionComponent,
+    SantiagoComponent,
+    VinotintoComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }

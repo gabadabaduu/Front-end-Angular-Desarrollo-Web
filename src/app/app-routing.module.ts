@@ -10,6 +10,10 @@ import { HorariosComponent } from './pages/canchas/Tipos/horarios.component';
 import { ReservasComponent } from './pages/canchas/reservas/reservas.component';
 import { CancelarComponent } from './pages/canchas/reservas/cancelar/cancelar.component';
 import { CrearcuentaComponent } from './pages/iniciar-sesion/crearcuenta/crearcuenta.component';
+import { VinotintoComponent } from './pages/canchas/Tipos/vinotinto/vinotinto.component';
+import { CampinComponent } from './pages/canchas/Tipos/campin/campin.component';
+import { SantiagoComponent } from './pages/canchas/Tipos/santiago/santiago.component';
+import { BuenosAiresComponent } from './pages/canchas/Tipos/buenos-aires/buenos-aires.component';
 
 
 const routes: Routes = [
@@ -21,7 +25,12 @@ const routes: Routes = [
   {path:"Horarios", component: HorariosComponent},
   {path:"Reserva", component: ReservasComponent},
   {path:"Cancelar", component: CancelarComponent},
-  {path:"CrearCuenta", component: CrearcuentaComponent}
+  {path:"CrearCuenta", component: CrearcuentaComponent},
+  {path:"Vinotinto", component: VinotintoComponent},
+  {path:"Campin", component: CampinComponent},
+  {path:"Santiago", component: SantiagoComponent},
+  {path: "Buenos-Aires", component: BuenosAiresComponent}
+  
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -29,4 +38,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { } export const
   RoutingComponent = [HomepageComponent,IniciarSesionComponent,RegistroComponent,ContrasenaOlvidadaComponent,
-    CanchasComponent,HorariosComponent, ReservasComponent];
+    CanchasComponent, ReservasComponent];
